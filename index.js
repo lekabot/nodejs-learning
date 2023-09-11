@@ -24,4 +24,43 @@
 // }
 // console.log(sum)
 //Task 4
+// function anagram(str1, str2) {
+//     str1 = str1.replace(/ /g, '').toLowerCase();
+//     str2 = str2.replace(/ /g, '').toLowerCase();
+//     if (str1.length !== str2.length) {
+//         return false;
+//     }
+//     const charCount1 = {};
+//     const charCount2 = {};
+//     for (const char of str1) {
+//         charCount1[char] = (charCount1[char] || 0) + 1;
+//     }
+//     for (const char of str2) {
+//         charCount2[char] = (charCount2[char] || 0) + 1;
+//     }
+//     for (const char in charCount1) {
+//         if (charCount1[char] !== charCount2[char]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(anagram("Лунь", "нуль")) // true
+// console.log(anagram("Лунь", "ноль")) // false
+//Task 5
+// function palindrome(word) {
+//     word = word.toLowerCase().replace(/\s/g, '');
 
+//     const length = word.length;
+
+//     for (let i = 0; i < Math.floor(length / 2); i++) {
+//         if (word[i] !== word[length - 1 - i]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(palindrome("Не гни папин ген")) // true
+// console.log(palindrome("123")) // false
+//Task 6
