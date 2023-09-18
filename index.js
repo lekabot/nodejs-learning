@@ -64,3 +64,50 @@
 // console.log(palindrome("Не гни папин ген")) // true
 // console.log(palindrome("123")) // false
 //Task 6
+// function printFibonacciEverySecond() {
+//     let a = 0;
+//     let b = 1;
+//     const interval = setInterval(() => {
+//       console.log(a);
+//       const next = a + b;
+//       a = b;
+//       b = next;
+//     }, 1000);
+//   }
+
+//   printFibonacciEverySecond();
+//Task 7
+// function delay(N) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve();
+//         }, N * 1000);
+//     });
+// }
+
+// // Пример использования:
+// delay(5)
+//     .then(() => {
+//         console.log('Прошло 5 секунд!');
+//     })
+//     .catch((error) => {
+//         console.error('Произошла ошибка:', error);
+//     });
+//Task 8
+// function intersect(arrA, arrB) {
+//     const intersection = [];
+//     for (const elementA of arrA) {
+//       if (arrB.includes(elementA)) {
+//         intersection.push(elementA);
+//       }
+//     }
+//     return intersection;
+//   }
+//   const array1 = [1, 2, 3, 4, 5];
+//   const array2 = [3, 4, 5, 6, 7];
+//   const result = intersect(array1, array2);
+//   console.log(result); // 3 4 5
+//Task 10
+// for (let i = 1; i <= 3; i++) {
+//     setTimeout((num) => console.log(num), 1000, i);
+// }
