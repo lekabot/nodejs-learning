@@ -111,3 +111,22 @@
 // for (let i = 1; i <= 3; i++) {
 //     setTimeout((num) => console.log(num), 1000, i);
 // }
+// Generarors
+// Padovan Sequence
+// function* padovanGenerator() {
+//     let a = 1, b = 1, c = 1;
+//     yield a;
+//     yield b;
+//     yield c;
+//     while (true) {
+//       const nextValue = a + b;
+//       yield nextValue;
+//       a = b;
+//       b = c;
+//       c = nextValue;
+//     }
+//   }
+//   const generator = padovanGenerator();
+//   for (let i = 0; i < 10; i++) {
+//     console.log(generator.next().value);
+//   }
